@@ -1,0 +1,67 @@
+// brand colours for reference
+$ccc: #3e96d5;
+$ncc: #a02d96;
+$hdc: #80AB25;
+$nocc: #007F6B;
+$nbc: #BBAB12;
+$nph: #1D1D1B;
+$ocs: #333399;
+$nhft: #F08221;
+
+// specify colors for site usage
+$brand-primary: $ncc;
+$brand-primary-lt: lighten($brand-primary,15%);
+$brand-secondary: $ccc;
+$brand-secondary-lt: lighten($brand-secondary,15%);
+$brand-alt: #80AB25;
+$brand-theme: #FFBF47;
+
+$link: #0066cc;
+$link-alt: $link;
+
+// specify functional colors for actions
+$highlight: #FFBF47;
+$fail: #FF0000;
+$success: #80AB25;
+
+// specify 50 shades of grey
+$black: #1E1E1E; // don't use actual black
+$white: #fefefe; // don't use actual white
+$geyser: #DBE1E3; //primarily used on borders
+$ghost-gray: #F1F1F1; //primarily used on callouts
+$manatee: #706F6F; //Md. Grey
+$mine-shaft: #353535; //dark gray
+$whitesmoke: #EDF4F7; //whitesmoke
+$sidebar: #f5f5f5;
+$sidebar-links: #link;
+$sidebar-block: transparent;
+
+
+/**
+ * Typography variables
+ */
+$base-font-size: 15;
+$base-line-height-ratio: 1.4;
+$base-line-height: 1.4;
+
+$h1-font-size: 37.5;
+$h2-font-size: 27;
+$h3-font-size: 21;
+$h4-font-size: 18;
+$h5-font-size: 18;
+$h6-font-size: 15;
+
+
+$font-family: 'Arial', sans-serif;
+$font-family-alt: 'Arial',sans-serif;
+$font-special: 'PraterSansWeb',Arial,sans-serif;
+
+
+/**
+ * Grid and layout variables
+ */
+$max-page-width: 1170px;
+$grid-gutter-base: 30px;
+$grid-gutter: percentage($grid-gutter-base/$max-page-width);
+$grid-gutter-half: $grid-gutter/2;
+$base-spacing-unit: $base-font-size*2;
