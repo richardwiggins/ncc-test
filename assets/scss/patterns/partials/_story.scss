@@ -1,0 +1,26 @@
+.story {
+  border:1px solid $geyser;
+  background:$white;
+  width:100%;
+  padding: $base-font-size/2;
+  h3 {
+    padding:0;
+    margin-top: $base-font-size;
+    margin-bottom: $base-font-size/2;
+  }
+  p {
+    @extend %small;
+    line-height: $base-line-height-ratio;
+  }
+  a {
+    border: 0;
+  }
+  a:hover img, a:active img {
+    opacity:.7;
+    //transition: opacity 300ms ease-out;
+  }
+  img {
+    width:100%;
+    height:auto;
+  }
+}

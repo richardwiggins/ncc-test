@@ -1,0 +1,26 @@
+table {
+  width:100%;
+  border-spacing: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $geyser;
+
+  thead, tfoot{
+    background-color:$geyser;
+  }
+  tr.even, tr.alt, tr:nth-child(even) {
+    background-color:$whitesmoke;
+  }
+
+  th, td {
+  	text-align: left;
+  	padding: 0.5em;
+
+  	&.align-right {
+  		text-align: right;
+  	}
+    &.number {
+      text-align: right;
+    }
+  }
+}

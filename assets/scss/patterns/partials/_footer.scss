@@ -1,0 +1,30 @@
+footer.site-footer {
+  @include font-size(13);
+  background: $brand-primary;
+  text-transform: uppercase;
+  height:auto;
+  margin-top: $base-font-size;
+  color:$white;
+
+  ul.inline-list {
+    @include font-size(13);
+    margin:0;
+    padding:0;
+  }
+  li{
+    margin:0;
+    padding:0 0 0 10px;
+    &:first-child{
+      padding:0;
+    }
+  }
+  a:link, a:visited {
+    color:$white;
+  }
+  a:hover, a:active{
+    color:$mine-shaft;
+  }
+  p{
+    margin:0;
+  }
+}

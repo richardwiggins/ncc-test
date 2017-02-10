@@ -1,0 +1,6 @@
+.divider{
+  width:100%;
+  background:$brand-primary;
+  @include rem-fallback(height, $base-font-size/2);
+  @include rem-fallback(padding-top, $base-font-size/2);
+}

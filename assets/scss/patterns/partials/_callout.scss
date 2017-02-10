@@ -1,0 +1,14 @@
+/*callout*/
+
+.callout{
+  margin-bottom: $base-font-size;
+  border-left:5px solid $brand-secondary;
+  @include rem-fallback(padding-right, $base-font-size / 2);
+  @include rem-fallback(padding-left, $base-font-size / 2);
+  line-height: 1;
+
+  p{
+    color:$mine-shaft;
+    font-size: 80%;
+  }
+}

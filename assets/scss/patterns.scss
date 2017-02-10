@@ -1,23 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+---
+layout: null
+# Only the main Sass file needs front matter (the dashes are enough)
+---
 
-// Variables
-//@import "_variables.scss";
-
-//@import "modules/_typography.scss";
-
-
-
-
-
-
-@charset "utf-8";
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-	"variables",
-	"patterns/utils/mixins",
-	"styleguide/styleguide"
-;
+@import "variables";
 
 @import "patterns/utils/placeholders";
 @import "patterns/utils/mixins";
@@ -30,7 +16,7 @@
 @import "patterns/base/grid";
 @import "patterns/base/typography";
 @import "patterns/base/links";
-//@import "patterns/base/buttons";
+@import "patterns/base/buttons";
 @import "patterns/base/forms";
 
 @import "patterns/partials/site-header";
@@ -45,6 +31,3 @@
 @import "patterns/partials/table";
 @import "patterns/partials/syntax-highlighting";
 @import "patterns/shame";
-
-// Import the Patterns from their rescpective folders
-@import "../../patterns/**/*.scss";

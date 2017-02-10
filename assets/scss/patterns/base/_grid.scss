@@ -1,0 +1,41 @@
+/**
+ * Generates a grid of your choosing
+ */
+
+/**
+ * Pull whole grid over by one gutter width
+ */
+.g {
+	@extend %clearfix;
+	margin-left: $grid-gutter * -1;
+}
+
+.g-column {
+	margin-left: $grid-gutter;
+	float: left;
+	width: 100% - $grid-gutter;
+}
+
+.g-one-half {
+	width: 50% - $grid-gutter;
+}
+
+.g-one-third {
+	width: 33.3333333% - $grid-gutter;
+}
+
+.g-two-thirds {
+	width: 66.6666667% - $grid-gutter;
+}
+
+.g-one-quarter {
+	width: 25% - $grid-gutter;
+}
+
+.g-three-quarters {
+	width: 50% - $grid-gutter;
+}
+
+.g-three-quarters {
+	width: 75% - $grid-gutter;
+}

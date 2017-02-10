@@ -1,0 +1,21 @@
+
+.nav {
+	@extend %clearfix;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	> li {
+		a {
+			display: block;
+			padding: .5em;
+			color: $mine-shaft;
+		}
+	}
+
+
+	@media all and  (min-width: 600px) {
+		> li {
+			float: left;
+		}
+	}
+}

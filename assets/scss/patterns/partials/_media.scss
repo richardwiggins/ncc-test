@@ -1,0 +1,32 @@
+.media {
+  border:1px solid $geyser;
+  background:$white;
+  width:100%;
+  @include rem-fallback(padding, $base-font-size/2);
+  a {
+    border: 0;
+  }
+  a:hover img, a:active img {
+    opacity:.7;
+    //transition: opacity 300ms ease-out;
+  }
+  img {
+    width:100%;
+    height:auto;
+  }
+  
+}
+
+.media__media {
+  @include rem-fallback(margin-bottom, $base-font-size);
+}
+.media__body {
+  .title {
+    color: $brand-primary;
+    margin-top: 0;
+    @include rem-fallback(margin-bottom, $base-font-size/2);
+  }
+  p {
+    @include rem-fallback(font-size, 16);
+  }
+}

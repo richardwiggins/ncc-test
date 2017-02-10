@@ -100,6 +100,7 @@ gulp.task('frctlBuild', function () {
 
 gulp.task('watchCSS', function(done) {
   gulp.watch('./assets/**/*.scss', gulp.series('css')).on('change', reload);
+  gulp.watch('./patterns/**/*.scss', gulp.series('css')).on('change', reload);
   done();
 });
 

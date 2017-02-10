@@ -1,0 +1,11 @@
+.panel {
+//   @extend %group;
+  background-color: $ghost-gray;
+  border: 1px solid $geyser;
+  @include rem-fallback(padding, $base-spacing-unit/2);
+}
+
+.panel p {
+  margin:0;
+  padding:0;
+}

@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'PraterSansWeb';
+  src: url('../fonts/PraterSansWeb.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/PraterSansWeb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/PraterSansWeb.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/PraterSansWeb.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/PraterSansWeb.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/webfont.svg#svgPraterSansWeb') format('svg'); /* Legacy iOS */
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+  font-family: $font-family;
+  line-height: $base-line-height-ratio;
+  @include rem-fallback(font-size, $base-font-size);
+  font-weight: 300;
+}
+
+/* Headings */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: $font-family-alt;
+  font-weight:300;
+  line-height: $base-line-height-ratio;
+}
+
+h1, .h1{
+  padding:0;
+  @include rem-fallback(margin-top,$base-font-size);
+  @include rem-fallback(margin-bottom,$base-font-size);
+  @include rem-fallback(font-size,$h1-font-size);
+  &.ncc-section-title {
+    font-family: $font-special;
+    color: $brand-primary;
+  }
+}
+
+h2, .h2 {
+  padding:0;
+  @include rem-fallback(margin-top,$base-font-size);
+  @include rem-fallback(margin-bottom,$base-font-size);
+  @include rem-fallback(font-size,$h2-font-size);
+}
+h3, .h3{
+  @include rem-fallback(margin-top,$base-font-size);
+  @include rem-fallback(margin-bottom,$base-font-size);
+  @include rem-fallback(font-size,$h3-font-size);
+}
+h4, .h4{
+  @include rem-fallback(font-size,$h4-font-size);
+}
+h5, .h5{
+  @include rem-fallback(font-size,$h5-font-size);
+}
+h6, .h6{
+  @include rem-fallback(font-size,$h6-font-size);
+}
+
+/*paragraphs*/
+p {
+  @include rem-fallback(font-size, $base-font-size);
+  @include rem-fallback(margin-bottom,$base-font-size);
+  line-height: $base-line-height-ratio;
+
+  &.intro {
+    @include rem-fallback(font-size, $base-font-size*1.15);
+  }
+}
+
+blockquote {
+  @include rem-fallback(padding-left,$base-font-size);
+
+  border-left-color: $brand-primary;
+  border-left-style: solid;
+  border-left-width: 3px;
+
+  font-style: italic;
+  color: $manatee;
+
+  p {
+    @include rem-fallback(margin-bottom, $base-font-size);
+  }
+
+}
+
+dl {
+  dd {
+    font-style: italic;
+  }
+}
+
+.callout {
+  @extend blockquote;
+  border-left-color: $highlight;
+
+  p {
+    @extend .small-text;
+    color: $mine-shaft;
+    font-size: normal;  
+  }
+  
+}
+
+.small-text {
+  font-size: 80%;
+}
+
+.vcard {
+  line-height: $base-line-height;
+  border:0;
+  margin:0;
+  padding:0;
+  .org {
+    font-weight: bold;
+  }
+  .locality {
+    display: block;
+  }
+}
+
+label,
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea,
+select,
+button {
+  @include rem-fallback(font-size,16); // make sure ios doesn't do that weird zooming thing on forms
+  font-family: $font-family;
+}
