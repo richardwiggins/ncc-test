@@ -1,6 +1,7 @@
 collated: true
 context:
   button-text: Button	
+  modifier: button
 variants:
 - name: button secondary
   context:

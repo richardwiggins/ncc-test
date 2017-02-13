@@ -1,0 +1,8 @@
+context:
+  colours:
+   - name: Brand Primary
+     value: 7f1183
+     variable: brand-primary
+   - name: Brand Secondary
+     value: ecc200
+     variable: brand-secondary

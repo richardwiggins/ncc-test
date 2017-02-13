@@ -1,4 +1,5 @@
-button, .button {
+button,
+.button {
 	display: inline-block; 
     vertical-align: middle; 
     font: inherit; 
@@ -57,19 +58,6 @@ button, .button {
 		background-color: darken($brand-theme,10%);
 		color: $white;
 	}
-}
-
-.button--task {
-	@extend .button;
-	background-image: url(/images/single-chevron-right.png);
-	background-repeat: no-repeat;
-	background-position: 97% 50%;
-	line-height: 1;
-	font-size: 1.4em;
-	padding-left: 1em;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	padding-right: 3em;
 }
 
 .button-group {

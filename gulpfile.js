@@ -75,6 +75,11 @@ gulp.task('fonts', function() {
   .pipe(gulp.dest('./public/fonts'));
 });
 
+gulp.task('assets', function() {
+  return gulp.src(['./assets/images/*'])
+  .pipe(gulp.dest('./public/images'));
+});
+
 // -----------------------------------------------------------------------------
 // Fractal Tasks
 // -----------------------------------------------------------------------------
@@ -123,4 +128,4 @@ gulp.task('watchJS', function(done) {
 
 gulp.task('watch', gulp.parallel('watchCSS', 'watchCSSTheme', 'watchJS'));
 
-gulp.task('dev', gulp.parallel('frctlStart', 'css', 'cssTheme', 'watch', 'fonts'));
+gulp.task('dev', gulp.parallel('frctlStart', 'css', 'cssTheme', 'watch', 'fonts', 'assets'));

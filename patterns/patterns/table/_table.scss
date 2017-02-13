@@ -1,15 +1,16 @@
 table {
   width:100%;
-  border-spacing: 0;
-  border-width: 1px;
-  border-style: solid;
-  border-color: $geyser;
+  border: none;
 
-  thead, tfoot{
+  thead, tfoot, thead tr {
     background-color:$geyser;
   }
   tr.even, tr.alt, tr:nth-child(even) {
-    background-color:$whitesmoke;
+    background-color: $ghost-gray;
+  }
+  
+  tr.odd, tr:nth-child(odd) {
+    background-color: $whitesmoke;
   }
 
   th, td {

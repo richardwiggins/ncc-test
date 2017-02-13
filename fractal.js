@@ -34,6 +34,7 @@ fractal.set('project.title', 'NCC Digital Design Guide');
 /* Configure components */
 
 fractal.components.set('title', 'Design Library');
+fractal.components.set('label', 'Components');
 fractal.components.set('path', `${__dirname}/patterns`);
 fractal.components.set('default.preview', `@preview`);
 
