@@ -1,0 +1,4 @@
+/*paragraphs*/
+p.intro {
+  @include rem-fallback(font-size, $base-font-size*1.15);
+}
