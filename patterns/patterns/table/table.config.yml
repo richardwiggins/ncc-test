@@ -1,8 +1,9 @@
 context:
-  colours:
-   - name: Brand Primary
-     value: 7f1183
-     variable: brand-primary
-   - name: Brand Secondary
-     value: ecc200
-     variable: brand-secondary
+  short-text: Content Goes Here
+  long-text: This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
+  header-text: Table Header
+  numbers:
+  - 12
+  - 24
+  - 36
+  - 48

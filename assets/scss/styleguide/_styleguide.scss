@@ -11,13 +11,13 @@
 }
 
 .pattern__title {
-	background-color: $ghost-gray;
+	//background-color: $ghost-gray;
 	@include rem-fallback(margin, $base-font-size/2, 0);
 	@include rem-fallback(padding, $base-font-size/2);
 	.title {
 		margin: 0;
 		line-height: 1;
-		color: $manatee;
+		color: $mid-grey;
 
 		cursor: pointer;
 		
@@ -61,7 +61,7 @@
 .site-navigation-header {
 	@include clearfix();
 
-	background-color: $mine-shaft;
+	background-color: $dark-grey;
 	padding: .5em 1em;
 
 	a {

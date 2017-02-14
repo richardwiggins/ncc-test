@@ -1,8 +1,30 @@
 context:
   colours:
-   - name: Brand Primary
-     value: 7f1183
+   - hex: 7f1283
      variable: brand-primary
-   - name: Brand Secondary
-     value: ecc200
+   - hex: 00a5db
      variable: brand-secondary
+   - hex: ????
+     variable: brand-theme
+   - hex: ffffff
+     variable: white
+   - hex: f4f4f4
+     variable: whitesmoke
+   - hex: eeeeee
+     variable: white-grey
+   - hex: e9e8e8
+     variable: ghost-gray
+   - hex: d6d6d6
+     variable: light-grey
+   - hex: 706f6f
+     variable: mid-grey
+   - hex: 323232
+     variable: dark-grey
+   - hex: '000000'
+     variable: black
+   - hex: 80ab25
+     variable: success
+   - hex: ff0000
+     variable: fail
+   - hex: ecc202
+     variable: highlight
