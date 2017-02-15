@@ -651,18 +651,6 @@ a img {
 .g-three-quarters {
   width: 72.4359%; }
 
-blockquote, .callout {
-  padding-left: 15px;
-  padding-left: 0.9375rem;
-  border-left-color: #7f1183;
-  border-left-style: solid;
-  border-left-width: 3px;
-  font-style: italic;
-  color: #706f6f; }
-  blockquote p, .callout p {
-    margin-bottom: 15px;
-    margin-bottom: 0.9375rem; }
-
 dl dd {
   font-style: italic; }
 
@@ -671,19 +659,6 @@ dl dd {
   .callout p {
     color: #323232;
     font-size: normal; }
-
-.small-text, .callout p {
-  font-size: 80%; }
-
-.vcard {
-  line-height: 1.4;
-  border: 0;
-  margin: 0;
-  padding: 0; }
-  .vcard .org {
-    font-weight: bold; }
-  .vcard .locality {
-    display: block; }
 
 label,
 input[type="text"],
@@ -1213,6 +1188,29 @@ input[type="text"].filter {
 .highlight .il {
   color: #099; }
 
+.vcard {
+  border-left: 5px solid #eeeeee;
+  font-size: 17.5px;
+  margin: 0 0 20px;
+  padding: 10px 20px;
+  line-height: 1.4; }
+  .vcard .org {
+    font-weight: bold; }
+  .vcard .locality {
+    display: block; }
+
+blockquote, .callout {
+  padding-left: 15px;
+  padding-left: 0.9375rem;
+  border-left-color: #7f1183;
+  border-left-style: solid;
+  border-left-width: 3px;
+  color: #706f6f; }
+  blockquote p, .callout p {
+    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
+    font-size: 115%; }
+
 button,
 .button,
 .search input[type="submit"],
@@ -1384,6 +1382,39 @@ button,
   padding-bottom: 1em;
   padding-right: 3em; }
 
+/*callout*/
+.symbol-text-area {
+  float: left;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 10px 0 0;
+  margin-bottom: 15px; }
+  .symbol-text-area .symbol-zone {
+    float: left;
+    width: 10%; }
+  .symbol-text-area .symbol-text {
+    float: left;
+    width: 80%;
+    margin-left: 3px; }
+  .symbol-text-area .exclamation p {
+    font-size: 1.3333em;
+    padding-bottom: 15px;
+    display: block; }
+
+p.custom-rteElement-Exclamation {
+  display: block;
+  padding: 3px 25%;
+  background-color: #f4f4f4;
+  margin-bottom: 10px; }
+  p.custom-rteElement-Exclamation::before {
+    color: #7f1183;
+    content: "!";
+    font-family: 'Iskoola Pota';
+    font-size: 4em;
+    float: left;
+    margin-top: -25px;
+    margin-left: 25%; }
+
 /**
  * Color Swatches
  */
@@ -1429,6 +1460,9 @@ button,
 
 .color-brand-primary-lt {
   background-color: #c11ac7; }
+
+.color-brand-primary-dk {
+  background-color: #36063e; }
 
 .color-brand-secondary {
   background-color: #00a5db; }
@@ -1544,7 +1578,11 @@ h6, .h6 {
 /*paragraphs*/
 p.intro {
   font-size: 17.25px;
-  font-size: 1.07812rem; }
+  font-size: 1.07812rem;
+  background-color: #f4f4f4;
+  color: #36063e;
+  margin-bottom: 25px;
+  padding: 15px; }
 
 .no-bullet {
   list-style-type: none; }
@@ -1556,6 +1594,39 @@ p {
   margin-bottom: 15px;
   margin-bottom: 0.9375rem;
   line-height: 1.4; }
+
+/*quote*/
+.symbol-text-area {
+  float: left;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 10px 0 0;
+  margin-bottom: 15px; }
+  .symbol-text-area .symbol-zone {
+    float: left;
+    width: 10%; }
+  .symbol-text-area .symbol-text {
+    float: left;
+    width: 80%;
+    margin-left: 3px; }
+
+p.custom-rteElement-QuoteMarks {
+  display: block;
+  padding: 10px 0 0;
+  margin-bottom: 15px; }
+  p.custom-rteElement-QuoteMarks::before {
+    color: #7f1183;
+    content: "\201C";
+    font-family: 'Iskoola Pota';
+    font-size: 6em;
+    color: #7f1183;
+    float: left;
+    margin-top: 15px;
+    line-height: .3em;
+    margin-left: 15%; }
+
+.small-text, .callout p {
+  font-size: 80%; }
 
 table {
   width: 100%;

@@ -1,21 +1,3 @@
-
-
-blockquote {
-  @include rem-fallback(padding-left,$base-font-size);
-
-  border-left-color: $brand-primary;
-  border-left-style: solid;
-  border-left-width: 3px;
-
-  font-style: italic;
-  color: $mid-grey;
-
-  p {
-    @include rem-fallback(margin-bottom, $base-font-size);
-  }
-
-}
-
 dl {
   dd {
     font-style: italic;
@@ -32,23 +14,6 @@ dl {
     font-size: normal;  
   }
   
-}
-
-.small-text {
-  font-size: 80%;
-}
-
-.vcard {
-  line-height: $base-line-height;
-  border:0;
-  margin:0;
-  padding:0;
-  .org {
-    font-weight: bold;
-  }
-  .locality {
-    display: block;
-  }
 }
 
 label,

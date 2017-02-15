@@ -1,7 +1,9 @@
 context:
   colours:
-   - hex: 7f1283
+   - hex: 7f1183
      variable: brand-primary
+   - hex: 36063e
+     variable: brand-primary-dk
    - hex: 00a5db
      variable: brand-secondary
    - hex: ????
