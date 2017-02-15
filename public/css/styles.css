@@ -1420,6 +1420,23 @@ select {
   padding: 0.46875rem;
   margin: 0;
   width: auto; }
+  input[type="text"].is-valid,
+  input[type="password"].is-valid,
+  input[type="date"].is-valid,
+  input[type="datetime"].is-valid,
+  input[type="datetime-local"].is-valid,
+  input[type="month"].is-valid,
+  input[type="week"].is-valid,
+  input[type="email"].is-valid,
+  input[type="number"].is-valid,
+  input[type="search"].is-valid,
+  input[type="tel"].is-valid,
+  input[type="time"].is-valid,
+  input[type="url"].is-valid,
+  input[type="color"].is-valid,
+  textarea.is-valid,
+  select.is-valid {
+    border-color: #80ab25; }
   input[type="text"].is-error,
   input[type="password"].is-error,
   input[type="date"].is-error,

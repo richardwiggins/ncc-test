@@ -28,6 +28,10 @@ select {
   margin: 0;
   width: auto;
 
+  &.is-valid {
+    border-color: $success;
+  }
+  
   &.is-error {
     border-color: $fail;
   }
