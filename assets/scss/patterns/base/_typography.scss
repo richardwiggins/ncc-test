@@ -4,18 +4,6 @@ dl {
   }
 }
 
-.callout {
-  @extend blockquote;
-  border-left-color: $highlight;
-
-  p {
-    @extend .small-text;
-    color: $dark-grey;
-    font-size: normal;  
-  }
-  
-}
-
 label,
 input[type="text"],
 input[type="password"],

@@ -534,7 +534,7 @@ th {
  */
 body,
 h1, h2, h3, h4, h5, h6,
-p, blockquote, .callout, pre,
+p, blockquote, pre,
 dl, dd, ol, ul,
 form, fieldset, legend,
 figure,
@@ -579,8 +579,7 @@ html {
 
 w h1, h2, h3, h4, h5, h6,
 ul, ol, dl,
-blockquote,
-.callout, p, address,
+blockquote, p, address,
 hr,
 table,
 fieldset, figure,
@@ -654,12 +653,6 @@ a img {
 dl dd {
   font-style: italic; }
 
-.callout {
-  border-left-color: #ecc202; }
-  .callout p {
-    color: #323232;
-    font-size: normal; }
-
 label,
 input[type="text"],
 input[type="password"],
@@ -681,115 +674,6 @@ button {
   font-size: 16px;
   font-size: 1rem;
   font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
-
-label, legend {
-  display: block;
-  margin-bottom: 7.5px;
-  margin-bottom: 0.46875rem; }
-
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-input[type="color"],
-textarea,
-select {
-  border-width: 2px;
-  border-style: solid;
-  border-color: #d9d9d9;
-  font-size: 16px;
-  line-height: 1;
-  padding: 7.5px;
-  padding: 0.46875rem;
-  margin: 0;
-  width: auto; }
-  input[type="text"].is-error,
-  input[type="password"].is-error,
-  input[type="date"].is-error,
-  input[type="datetime"].is-error,
-  input[type="datetime-local"].is-error,
-  input[type="month"].is-error,
-  input[type="week"].is-error,
-  input[type="email"].is-error,
-  input[type="number"].is-error,
-  input[type="search"].is-error,
-  input[type="tel"].is-error,
-  input[type="time"].is-error,
-  input[type="url"].is-error,
-  input[type="color"].is-error,
-  textarea.is-error,
-  select.is-error {
-    border-color: #ff0000; }
-  input[type="text"]:focus,
-  input[type="password"]:focus,
-  input[type="date"]:focus,
-  input[type="datetime"]:focus,
-  input[type="datetime-local"]:focus,
-  input[type="month"]:focus,
-  input[type="week"]:focus,
-  input[type="email"]:focus,
-  input[type="number"]:focus,
-  input[type="search"]:focus,
-  input[type="tel"]:focus,
-  input[type="time"]:focus,
-  input[type="url"]:focus,
-  input[type="color"]:focus,
-  textarea:focus,
-  select:focus {
-    outline-color: #ecc202;
-    outline-style: solid;
-    outline-width: 3px; }
-
-fieldset {
-  padding: 0;
-  border: 0; }
-  fieldset ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none; }
-
-.search {
-  width: 100%;
-  position: relative; }
-  .search input[type="submit"] {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 45px;
-    width: 2.8125rem;
-    background-image: url(../images/icon-search.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    text-indent: -9999px; }
-
-input[type="text"].filter {
-  border-color: #d9d9d9;
-  margin-bottom: 30; }
-
-.search--home {
-  padding: 30px 15px;
-  padding: 1.875rem 0.9375rem;
-  background-color: #7f1183;
-  color: #ffffff; }
-  .search--home h3 {
-    font-weight: normal;
-    margin-top: 0;
-    margin-bottom: 7.5px;
-    margin-bottom: 0.46875rem; }
-  .search--home .hint {
-    font-size: 80%;
-    margin-bottom: 0;
-    margin-top: 1em; }
 
 .site-header, .site-header--light, .site-header--dark, .site-header--theme {
   background: #7f1183;
@@ -1187,25 +1071,25 @@ input[type="text"].filter {
   .vcard .locality {
     display: block; }
 
-blockquote, .callout {
+blockquote {
   padding-left: 15px;
   padding-left: 0.9375rem;
   border-left-color: #7f1183;
   border-left-style: solid;
   border-left-width: 3px;
   color: #706f6f; }
-  blockquote p, .callout p {
+  blockquote p {
     margin-bottom: 15px;
     margin-bottom: 0.9375rem;
     font-size: 115%; }
 
 button,
 .button,
-.search input[type="submit"],
 .button--secondary,
 .search--home input[type="submit"],
 .button--alt,
-.button--task {
+.button--task,
+.search input[type="submit"] {
   display: inline-block;
   vertical-align: middle;
   font: inherit;
@@ -1225,39 +1109,39 @@ button,
   text-decoration: none; }
   button:hover,
   .button:hover,
-  .search input[type="submit"]:hover,
   .button--secondary:hover,
   .search--home input[type="submit"]:hover,
   .button--alt:hover,
-  .button--task:hover {
+  .button--task:hover,
+  .search input[type="submit"]:hover {
     color: #ffffff;
     background-color: #530b56; }
   button:focus,
   .button:focus,
-  .search input[type="submit"]:focus,
   .button--secondary:focus,
   .search--home input[type="submit"]:focus,
   .button--alt:focus,
-  .button--task:focus {
+  .button--task:focus,
+  .search input[type="submit"]:focus {
     outline: 3px solid #ecc202; }
   button:visited,
   .button:visited,
-  .search input[type="submit"]:visited,
   .button--secondary:visited,
   .search--home input[type="submit"]:visited,
   .button--alt:visited,
-  .button--task:visited {
+  .button--task:visited,
+  .search input[type="submit"]:visited {
     color: #ffffff; }
   button + p,
-  .button + p, .search input[type="submit"] + p, .button--secondary + p, .search--home input[type="submit"] + p, .button--alt + p, .button--task + p {
+  .button + p, .button--secondary + p, .search--home input[type="submit"] + p, .button--alt + p, .button--task + p, .search input[type="submit"] + p {
     margin-top: 1em; }
   button.btn-large,
   .button.btn-large,
-  .search input.btn-large[type="submit"],
   .btn-large.button--secondary,
   .search--home input.btn-large[type="submit"],
   .btn-large.button--alt,
-  .btn-large.button--task {
+  .btn-large.button--task,
+  .search input.btn-large[type="submit"] {
     padding: .5em 1em;
     font-size: 18px;
     font-size: 1.125rem; }
@@ -1278,17 +1162,17 @@ button,
 
 .button-group {
   margin-left: -2.5641%; }
-  .button-group .button, .button-group .search input[type="submit"], .search .button-group input[type="submit"], .button-group .button--secondary, .button-group .search--home input[type="submit"], .search--home .button-group input[type="submit"], .button-group .button--alt, .button-group .button--task {
+  .button-group .button, .button-group .button--secondary, .button-group .search--home input[type="submit"], .search--home .button-group input[type="submit"], .button-group .button--alt, .button-group .button--task, .button-group .search input[type="submit"], .search .button-group input[type="submit"] {
     margin-left: 2.5641%;
     margin-bottom: 1.5em; }
 
 button,
 .button,
-.search input[type="submit"],
 .button--secondary,
 .search--home input[type="submit"],
 .button--alt,
-.button--task {
+.button--task,
+.search input[type="submit"] {
   display: inline-block;
   vertical-align: middle;
   font: inherit;
@@ -1308,39 +1192,39 @@ button,
   text-decoration: none; }
   button:hover,
   .button:hover,
-  .search input[type="submit"]:hover,
   .button--secondary:hover,
   .search--home input[type="submit"]:hover,
   .button--alt:hover,
-  .button--task:hover {
+  .button--task:hover,
+  .search input[type="submit"]:hover {
     color: #ffffff;
     background-color: #530b56; }
   button:focus,
   .button:focus,
-  .search input[type="submit"]:focus,
   .button--secondary:focus,
   .search--home input[type="submit"]:focus,
   .button--alt:focus,
-  .button--task:focus {
+  .button--task:focus,
+  .search input[type="submit"]:focus {
     outline: 3px solid #ecc202; }
   button:visited,
   .button:visited,
-  .search input[type="submit"]:visited,
   .button--secondary:visited,
   .search--home input[type="submit"]:visited,
   .button--alt:visited,
-  .button--task:visited {
+  .button--task:visited,
+  .search input[type="submit"]:visited {
     color: #ffffff; }
   button + p,
-  .button + p, .search input[type="submit"] + p, .button--secondary + p, .search--home input[type="submit"] + p, .button--alt + p, .button--task + p {
+  .button + p, .button--secondary + p, .search--home input[type="submit"] + p, .button--alt + p, .button--task + p, .search input[type="submit"] + p {
     margin-top: 1em; }
   button.btn-large,
   .button.btn-large,
-  .search input.btn-large[type="submit"],
   .btn-large.button--secondary,
   .search--home input.btn-large[type="submit"],
   .btn-large.button--alt,
-  .btn-large.button--task {
+  .btn-large.button--task,
+  .search input.btn-large[type="submit"] {
     padding: .5em 1em;
     font-size: 18px;
     font-size: 1.125rem; }
@@ -1506,6 +1390,115 @@ body {
   font-size: 0.9375rem;
   font-weight: 300; }
 
+label, legend {
+  display: block;
+  margin-bottom: 7.5px;
+  margin-bottom: 0.46875rem; }
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea,
+select {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  font-size: 16px;
+  line-height: 1;
+  padding: 7.5px;
+  padding: 0.46875rem;
+  margin: 0;
+  width: auto; }
+  input[type="text"].is-error,
+  input[type="password"].is-error,
+  input[type="date"].is-error,
+  input[type="datetime"].is-error,
+  input[type="datetime-local"].is-error,
+  input[type="month"].is-error,
+  input[type="week"].is-error,
+  input[type="email"].is-error,
+  input[type="number"].is-error,
+  input[type="search"].is-error,
+  input[type="tel"].is-error,
+  input[type="time"].is-error,
+  input[type="url"].is-error,
+  input[type="color"].is-error,
+  textarea.is-error,
+  select.is-error {
+    border-color: #ff0000; }
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="date"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="month"]:focus,
+  input[type="week"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="time"]:focus,
+  input[type="url"]:focus,
+  input[type="color"]:focus,
+  textarea:focus,
+  select:focus {
+    outline-color: #00a5db;
+    outline-style: solid;
+    outline-width: 3px; }
+
+fieldset {
+  padding: 0;
+  border: 0; }
+  fieldset ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+
+input[type="text"].filter {
+  border-color: #d9d9d9;
+  margin-bottom: 30; }
+
+.search--home {
+  padding: 30px 15px;
+  padding: 1.875rem 0.9375rem;
+  background-color: #7f1183;
+  color: #ffffff; }
+  .search--home h3 {
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 7.5px;
+    margin-bottom: 0.46875rem; }
+  .search--home .hint {
+    font-size: 80%;
+    margin-bottom: 0;
+    margin-top: 1em; }
+
+.search {
+  width: 100%;
+  position: relative; }
+  .search input[type="submit"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    width: 2.8125rem;
+    background-image: url(../images/icon-search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px; }
+
 @font-face {
   font-family: 'PraterSansWeb';
   src: url("../fonts/PraterSansWeb.eot");
@@ -1565,6 +1558,12 @@ h6, .h6 {
   font-size: 15px;
   font-size: 0.9375rem; }
 
+hr {
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  height: 0;
+  margin: 20px 0; }
+
 /*paragraphs*/
 p.intro {
   font-size: 17.25px;
@@ -1586,17 +1585,16 @@ a {
     background-color: #ecc202;
     outline: 3px solid #ecc202; }
 
-a {
-  color: #0066cc;
-  text-decoration: none; }
-  a:hover {
-    color: #0066cc;
-    text-decoration: underline; }
-  a:visited {
-    color: #0066cc; }
-  a:focus {
-    background-color: #ecc202;
-    outline: 3px solid #ecc202; }
+.list-inline {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .list-inline li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 0.5em; }
+    .list-inline li:last-of-type {
+      margin-right: 0; }
 
 .no-bullet {
   list-style-type: none; }
@@ -1639,7 +1637,7 @@ p.custom-rteElement-QuoteMarks {
     line-height: .3em;
     margin-left: 15%; }
 
-.small-text, .callout p {
+.small-text {
   font-size: 80%; }
 
 table {

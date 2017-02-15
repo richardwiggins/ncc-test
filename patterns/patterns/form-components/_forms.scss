@@ -33,7 +33,7 @@ select {
   }
 
   &:focus {
-    outline-color: $highlight;
+    outline-color: $brand-secondary;
     outline-style: solid;
     outline-width: 3px;
   }
@@ -47,27 +47,6 @@ fieldset {
     padding: 0;
     margin: 0;
     list-style-type: none;
-  }
-}
-
-.search {
-  width: 100%;
-  position: relative;
-
-  input[type="text"] {}
-  input[type="submit"] {
-    @extend .button;
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    @include rem-fallback(width, $base-spacing-unit*1.5);
-
-    background-image: url(../images/icon-search.png);
-    background-repeat: no-repeat;
-    background-position: center;
-
-    text-indent: -9999px;
   }
 }
 
