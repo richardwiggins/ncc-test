@@ -1,3 +1,3 @@
-# Accessibility
+# Page Title
 
-An off-viewport notice for links that open in a new window, you can't see it but that's kind of the point.
+The title tag should be in the following format - '_Page Title | website url_'

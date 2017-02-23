@@ -21,21 +21,6 @@
 
 }
 
-.site-header--light {
-	@extend .site-header;
-	background: $white;
-}
-
-.site-header--dark {
-	@extend .site-header;
-	background: $dark-grey;
-}
-
-.site-header--theme {
-	@extend .site-header;
-	background: $brand-theme;
-}
-
 .site-logo {
 	float: left;
 	width: 16.6666667%;

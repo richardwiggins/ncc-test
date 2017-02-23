@@ -1,3 +1,0 @@
-# Site-Wide Alert
-
-REMOVE?
