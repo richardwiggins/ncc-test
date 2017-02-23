@@ -135,7 +135,7 @@
       .menu-btn > a {
         float: right; } }
 
-.site-wide-alert, .breadcrumbs ul {
+.breadcrumbs ul, .site-wide-alert {
   font-size: 80%; }
 
 /**
@@ -790,45 +790,6 @@ button {
 .media__body p {
   font-size: 16px;
   font-size: 1rem; }
-
-.site-wide-alert {
-  background-color: #7f1183;
-  color: #ffffff;
-  vertical-align: middle !important;
-  padding: 15px;
-  padding: 0.9375rem;
-  margin-bottom: 15px;
-  margin-bottom: 0.9375rem; }
-  .site-wide-alert h2 {
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    font-size: 21px;
-    font-size: 1.3125rem; }
-
-.site-wide-alert__header {
-  margin-bottom: 15px;
-  margin-bottom: 0.9375rem; }
-
-.site-message--success, .site-message--fail, .site-message--info {
-  background: #e9e8e8;
-  border-color: #b7b4b4;
-  border-width: 1px;
-  border-style: solid;
-  padding: 15px;
-  padding: 0.9375rem; }
-
-.site-message--success {
-  background-color: #edf7d8;
-  border-color: #80ab25; }
-
-.site-message--fail {
-  background-color: #ffcccc;
-  border-color: #ff0000; }
-
-.site-message--info {
-  background-color: #fee989;
-  border-color: #ecc202; }
 
 .breadcrumbs {
   padding-top: 7.5px;
@@ -1616,6 +1577,49 @@ a {
 .no-bullet {
   list-style-type: none; }
 
+.site-wide-alert {
+  background-color: #7f1183;
+  color: #ffffff;
+  vertical-align: middle !important;
+  padding: 15px;
+  padding: 0.9375rem;
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem; }
+  .site-wide-alert h2 {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    font-size: 1.3125rem; }
+
+.site-wide-alert__header {
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem; }
+
+.site-message--fail, .site-message--info, .site-message--success {
+  background: #e9e8e8;
+  border-color: #b7b4b4;
+  border-width: 1px;
+  border-style: solid;
+  padding: 15px;
+  padding: 0.9375rem; }
+
+.site-message--fail {
+  background-color: #ffcccc;
+  border-color: #ff0000; }
+
+.site-message--info {
+  background-color: #fff7d5;
+  border-color: #ecc202; }
+
+.site-message--fail {
+  background-color: #ffcccc;
+  border-color: #ff0000; }
+
+.site-message--success {
+  background-color: #edf7d8;
+  border-color: #80ab25; }
+
 /*paragraphs*/
 p {
   font-size: 15px;
@@ -1659,12 +1663,7 @@ p.custom-rteElement-QuoteMarks {
 
 table {
   width: 100%;
-  border: none;
-  /*
-  tr.odd, tr:nth-child(odd) {
-    background-color: $whitesmoke;
-  }
-*/ }
+  border: none; }
   table thead, table tfoot, table thead tr {
     background-color: #d9d9d9; }
   table tr.even, table tr.alt, table tr:nth-child(even) {
@@ -1676,3 +1675,19 @@ table {
       text-align: right; }
     table th.number, table td.number {
       text-align: right; }
+
+.table-responsive {
+  overflow-x: auto;
+  min-height: 0.01%; }
+  @media screen and (max-width: 768px) {
+    .table-responsive {
+      width: 100%;
+      overflow-y: hidden;
+      -ms-overflow-style: -ms-autohiding-scrollbar; }
+      .table-responsive > .table > thead > tr > th,
+      .table-responsive > .table > thead > tr > td,
+      .table-responsive > .table > tbody > tr > th,
+      .table-responsive > .table > tbody > tr > td,
+      .table-responsive > .table > tfoot > tr > th,
+      .table-responsive > .table > tfoot > tr > td {
+        white-space: nowrap; } }
