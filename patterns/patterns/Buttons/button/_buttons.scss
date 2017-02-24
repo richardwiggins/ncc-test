@@ -42,10 +42,10 @@ button,
 
 .button--secondary {
 	@extend .button;
-	background-color: $dark-grey;
-	border-bottom-color: darken($dark-grey,10%);
+	background-color: $brand-secondary;
+	border-bottom-color: darken($brand-secondary,10%);
 	&:hover {
-		background-color: darken($brand-primary,10%);
+		background-color: darken($brand-secondary,10%);
 	}
 }
 

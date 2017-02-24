@@ -141,12 +141,12 @@
 /**
  * Clearfix
  */
-.wrapper, .container, .row, .g, .breadcrumbs ul, .site-header, .site-header--dark, .site-header--light, .site-header--theme {
+.wrapper, .container, .row, .breadcrumbs ul, .g, .site-header, .site-header--dark, .site-header--light, .site-header--theme {
   zoom: 1; }
-  .wrapper:before, .container:before, .row:before, .g:before, .breadcrumbs ul:before, .site-header:before, .site-header--dark:before, .site-header--light:before, .site-header--theme:before, .wrapper:after, .container:after, .row:after, .g:after, .breadcrumbs ul:after, .site-header:after, .site-header--dark:after, .site-header--light:after, .site-header--theme:after {
+  .wrapper:before, .container:before, .row:before, .breadcrumbs ul:before, .g:before, .site-header:before, .site-header--dark:before, .site-header--light:before, .site-header--theme:before, .wrapper:after, .container:after, .row:after, .breadcrumbs ul:after, .g:after, .site-header:after, .site-header--dark:after, .site-header--light:after, .site-header--theme:after {
     content: "";
     display: table; }
-  .wrapper:after, .container:after, .row:after, .g:after, .breadcrumbs ul:after, .site-header:after, .site-header--dark:after, .site-header--light:after, .site-header--theme:after {
+  .wrapper:after, .container:after, .row:after, .breadcrumbs ul:after, .g:after, .site-header:after, .site-header--dark:after, .site-header--light:after, .site-header--theme:after {
     clear: both; }
 
 /**
@@ -618,38 +618,6 @@ a img {
 /**
  * Group elements in a vertical container
  */
-/**
- * Generates a grid of your choosing
- */
-/**
- * Pull whole grid over by one gutter width
- */
-.g {
-  margin-left: -2.5641%; }
-
-.g-column {
-  margin-left: 2.5641%;
-  float: left;
-  width: 97.4359%; }
-
-.g-one-half {
-  width: 47.4359%; }
-
-.g-one-third {
-  width: 30.76923%; }
-
-.g-two-thirds {
-  width: 64.10256%; }
-
-.g-one-quarter {
-  width: 22.4359%; }
-
-.g-three-quarters {
-  width: 47.4359%; }
-
-.g-three-quarters {
-  width: 72.4359%; }
-
 dl dd {
   font-style: italic; }
 
@@ -1050,10 +1018,10 @@ button,
     font-size: 1.125rem; }
 
 .button--secondary, .search--home input[type="submit"] {
-  background-color: #323232;
-  border-bottom-color: #191919; }
+  background-color: #b65e00;
+  border-bottom-color: #834400; }
   .button--secondary:hover, .search--home input[type="submit"]:hover {
-    background-color: #530b56; }
+    background-color: #834400; }
 
 .button--alt {
   background-color: #ffbf47;
@@ -1068,83 +1036,6 @@ button,
   .button-group .button, .button-group .button--secondary, .button-group .search--home input[type="submit"], .search--home .button-group input[type="submit"], .button-group .button--alt, .button-group .button--task, .button-group .search input[type="submit"], .search .button-group input[type="submit"] {
     margin-left: 2.5641%;
     margin-bottom: 1.5em; }
-
-button,
-.button,
-.button--secondary,
-.search--home input[type="submit"],
-.button--alt,
-.button--task,
-.search input[type="submit"] {
-  display: inline-block;
-  vertical-align: middle;
-  font: inherit;
-  text-align: center;
-  margin: 0;
-  cursor: pointer;
-  overflow: visible;
-  padding: 7.5px;
-  padding: 0.46875rem;
-  background-color: #7f1183;
-  border: none;
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-bottom-color: #530b56;
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none; }
-  button:hover,
-  .button:hover,
-  .button--secondary:hover,
-  .search--home input[type="submit"]:hover,
-  .button--alt:hover,
-  .button--task:hover,
-  .search input[type="submit"]:hover {
-    color: #ffffff;
-    background-color: #530b56; }
-  button:focus,
-  .button:focus,
-  .button--secondary:focus,
-  .search--home input[type="submit"]:focus,
-  .button--alt:focus,
-  .button--task:focus,
-  .search input[type="submit"]:focus {
-    outline: 3px solid #ecc202; }
-  button:visited,
-  .button:visited,
-  .button--secondary:visited,
-  .search--home input[type="submit"]:visited,
-  .button--alt:visited,
-  .button--task:visited,
-  .search input[type="submit"]:visited {
-    color: #ffffff; }
-  button + p,
-  .button + p, .button--secondary + p, .search--home input[type="submit"] + p, .button--alt + p, .button--task + p, .search input[type="submit"] + p {
-    margin-top: 1em; }
-  button.btn-large,
-  .button.btn-large,
-  .btn-large.button--secondary,
-  .search--home input.btn-large[type="submit"],
-  .btn-large.button--alt,
-  .btn-large.button--task,
-  .search input.btn-large[type="submit"] {
-    padding: .5em 1em;
-    font-size: 18px;
-    font-size: 1.125rem; }
-
-.button--secondary, .search--home input[type="submit"] {
-  background-color: #323232;
-  border-bottom-color: #191919; }
-  .button--secondary:hover, .search--home input[type="submit"]:hover {
-    background-color: #530b56; }
-
-.button--alt {
-  background-color: #ffbf47;
-  border-bottom-color: #ffad14;
-  color: #323232; }
-  .button--alt:hover {
-    background-color: #ffad14;
-    color: #ffffff; }
 
 .button--task {
   background-image: url(/images/single-chevron-right.png);
@@ -1421,6 +1312,38 @@ input[type="text"].filter {
     background-repeat: no-repeat;
     background-position: center;
     text-indent: -9999px; }
+
+/**
+ * Generates a grid of your choosing
+ */
+/**
+ * Pull whole grid over by one gutter width
+ */
+.g {
+  margin-left: -2.5641%; }
+
+.g-column {
+  margin-left: 2.5641%;
+  float: left;
+  width: 97.4359%; }
+
+.g-one-half {
+  width: 47.4359%; }
+
+.g-one-third {
+  width: 30.76923%; }
+
+.g-two-thirds {
+  width: 64.10256%; }
+
+.g-one-quarter {
+  width: 22.4359%; }
+
+.g-three-quarters {
+  width: 47.4359%; }
+
+.g-three-quarters {
+  width: 72.4359%; }
 
 .site-header, .site-header--dark, .site-header--light, .site-header--theme {
   background: #7f1183;
