@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
 
-// Variables
-//@import "_variables.scss";
-
-//@import "modules/_typography.scss";
-
-
-
-
-
-
 @charset "utf-8";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -27,23 +17,7 @@
 @import "patterns/base/box-sizing";
 @import "patterns/base/shared";
 @import "patterns/base/layout";
-//@import "patterns/base/grid";
 @import "patterns/base/typography";
-//@import "patterns/base/links";
-//@import "patterns/base/buttons";
-//@import "patterns/base/forms";
-
-//@import "patterns/partials/site-header";
-//@import "patterns/partials/sidebar";
-//@import "patterns/partials/sidebar-block";
-//@import "patterns/partials/sidebar-guide";
-@import "patterns/partials/media";
-//@import "patterns/partials/alerts";
-//@import "patterns/partials/messages";
-//@import "patterns/partials/breadcrumbs";
-@import "patterns/partials/panels";
-//@import "patterns/partials/table";
-@import "patterns/partials/syntax-highlighting";
 
 // Import the Patterns from their rescpective folders
 @import "../../patterns/**/*.scss";
