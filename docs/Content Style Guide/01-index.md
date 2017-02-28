@@ -3,33 +3,12 @@ title: Welcome to the NCC Content Style Guide
 label: Overview
 ---
 
-## Addresses
-No full stops at the end of addresses
+#### We aim to be consistent across the website, online forms and other Northamptonshire County Council publications.
 
-No comma between the number and the street name
+Please refer to the <a href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK government digital style guide</a> - we will follow the advice on this.
 
-Do not abbreviate Road, Street, Avenue
+## Northamptonshire-specific terms
 
-No comma between town or county and postcode
+The list of rules below provides additional guidance on how we write certain terms on the Northamptonshire website.
 
-Building numbers that cover a range (196-198) should be separated by a dash with no spaces
-
-Where the address is in a city or major town, do not include the county:
-
-> Northamptonshire County Council
-County Hall
-Northampton
-NN1 1AX
-
-If the address is for a department, put the department name first:
-
-Community Services
-Northamptonshire County Council
-County Hall
-Northampton
-NN1 1AX
-
-## Adoption
-Mention that children are adopted only when relevant to the story.
-
-Use 'birth father', 'birth family' rather than 'real father', 'real family', etc.
+If you would like something added to the list, please email your suggestion to <a href="mailto:webteam@northamptonshire.gov.uk">webteam@northamptonshire.gov.uk</a>
