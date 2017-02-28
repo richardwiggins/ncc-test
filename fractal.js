@@ -9,13 +9,6 @@
 const fractal    = module.exports = require('@frctl/fractal').create();
 const mandelbrot = require('@frctl/mandelbrot');
 
-/*
-const mandelbrot = require('@frctl/mandelbrot')({
-  lang: 'en-gb',
-  styles: ['default', 'http://bits.24ways.org/assets/styles/theme.css']
-});
-*/
-
 // create a new instance with custom config options
 const myCustomisedTheme = mandelbrot({
     // any other theme configuration values here
@@ -29,7 +22,7 @@ const myCustomisedTheme = mandelbrot({
 fractal.web.theme(myCustomisedTheme); // tell Fractal to use the configured theme by default
 
 
-fractal.set('project.title', 'NCC Digital Design Guide');
+fractal.set('project.title', 'NCC Digital Developer and Design Guide');
 
 /* Configure components */
 

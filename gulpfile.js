@@ -64,20 +64,29 @@ gulp.task('cssTheme', function() {
 // JavaScript Tasks
 // -----------------------------------------------------------------------------
 
-gulp.task('scripts', function() {
-  return gulp.src(['./patterns/**/*.js'])
-  .pipe(concat('scripts.js'))
-  .pipe(gulp.dest('./public/javascript/'));
-});
+//gulp.task('scripts', function() {
+  //return gulp.src(['./patterns/**/*.js'])
+  //.pipe(concat('scripts.js'))
+  //.pipe(gulp.dest('./public/javascript/'));
+//});
+
+// -----------------------------------------------------------------------------
+// Asset Tasks
+// -----------------------------------------------------------------------------
 
 gulp.task('fonts', function() {
   return gulp.src(['./assets/fonts/*'])
   .pipe(gulp.dest('./public/fonts'));
 });
 
-gulp.task('assets', function() {
+gulp.task('images', function() {
   return gulp.src(['./assets/images/*'])
   .pipe(gulp.dest('./public/images'));
+});
+
+gulp.task('icons', function() {
+  return gulp.src(['./assets/icons/*'])
+  .pipe(gulp.dest('./public/icons'));
 });
 
 // -----------------------------------------------------------------------------
@@ -114,11 +123,6 @@ gulp.task('watchCSSTheme', function(done) {
   done();
 });
 
-gulp.task('watchJS', function(done) {
-  gulp.watch('./patterns/blocks/**/*.js', gulp.series('scripts')).on('change', reload);
-  done();
-});
-
 
 
 // -----------------------------------------------------------------------------
@@ -126,6 +130,6 @@ gulp.task('watchJS', function(done) {
 // -----------------------------------------------------------------------------
 
 
-gulp.task('watch', gulp.parallel('watchCSS', 'watchCSSTheme', 'watchJS'));
+gulp.task('watch', gulp.parallel('watchCSS', 'watchCSSTheme'));
 
-gulp.task('dev', gulp.parallel('frctlStart', 'css', 'cssTheme', 'watch', 'fonts', 'assets'));
+gulp.task('dev', gulp.parallel('frctlStart', 'css', 'cssTheme', 'watch', 'fonts', 'images', 'icons'));
