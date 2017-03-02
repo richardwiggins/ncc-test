@@ -5,6 +5,12 @@
 /*
  * Dependencies
  */
+ 
+const paths = {
+  build: `${__dirname}/www`,
+  src: `${__dirname}/src`,
+  static: `${__dirname}/tmp`,
+};
 
 const fractal    = module.exports = require('@frctl/fractal').create();
 const mandelbrot = require('@frctl/mandelbrot');
@@ -28,20 +34,26 @@ fractal.set('project.title', 'NCC Digital Developer and Design Guide');
 
 fractal.components.set('title', 'Design Library');
 fractal.components.set('label', 'Components');
-fractal.components.set('path', `${__dirname}/patterns`);
+fractal.components.set('path', `${paths.src}/patterns`);
 fractal.components.set('default.preview', `@preview`);
 
 /* Configure docs */
 
-fractal.docs.set('path', `${__dirname}/docs`);
+fractal.docs.set('path', `${paths.src}/docs`);
 fractal.docs.set('indexLabel', 'Welcome');
-fractal.web.set('builder.dest', __dirname + '/live');
+fractal.web.set('builder.dest', paths.build);
 
 /* Configure web */
 
-fractal.web.set('static.path', `${__dirname}/public`);
+/*
+fractal.web.set('static.path', paths.static);
 fractal.web.set('server.sync', true);
 fractal.web.set('server.syncOptions', {
     open: true,
     browser: 'default'
 });
+*/
+
+fractal.web.set('static.path', paths.static);
+fractal.web.set('builder.dest', paths.build);
+fractal.web.set('server.sync', true);

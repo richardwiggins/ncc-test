@@ -28,6 +28,15 @@ const logger            = fractal.cli.console;
 // Configuration
 // -----------------------------------------------------------------------------
 
+// Paths
+const paths = {
+  build: `${__dirname}/www`,
+  dest: `${__dirname}/tmp`,
+  src: `${__dirname}/src`,
+  modules: `${__dirname}/node_modules`,
+};
+
+
 // Sass Configarables
 
 const autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
@@ -37,27 +46,27 @@ const autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR
 // -----------------------------------------------------------------------------
 
 gulp.task('css', function() {
-  return gulp.src('./assets/scss/styles.scss')
+  return gulp.src(`${paths.src}/assets/scss/styles.scss`)
   .pipe(sassGlob())
   .pipe(sass({
     sourcemap: true,
-    sourcemapPath: './patterns/',
+    sourcemapPath: `${paths.src}/patterns/`,
   })).on('error', notify.onError(function (error) {return "Problem file : " + error.message;}))
   .pipe(autoprefixer(autoprefixerOptions))
   .pipe(browserSync.stream())
-  .pipe(gulp.dest('./public/css'));
+  .pipe(gulp.dest(`${paths.dest}/css`));
 });
 
 gulp.task('cssTheme', function() {
-  return gulp.src('./assets/scss/theme.scss')
+  return gulp.src(`${paths.src}/assets/scss/theme.scss`)
   .pipe(sassGlob())
   .pipe(sass({
     sourcemap: true,
-    sourcemapPath: './patterns/',
+    sourcemapPath: `${paths.src}/patterns/`,
   })).on('error', notify.onError(function (error) {return "Problem file : " + error.message;}))
   .pipe(autoprefixer(autoprefixerOptions))
   .pipe(browserSync.stream())
-  .pipe(gulp.dest('./public/css'));
+  .pipe(gulp.dest(`${paths.dest}/css`));
 });
 
 // -----------------------------------------------------------------------------
@@ -75,18 +84,18 @@ gulp.task('cssTheme', function() {
 // -----------------------------------------------------------------------------
 
 gulp.task('fonts', function() {
-  return gulp.src(['./assets/fonts/*'])
-  .pipe(gulp.dest('./public/fonts'));
+  return gulp.src([`${paths.src}/assets/fonts/*`])
+  .pipe(gulp.dest(`${paths.dest}/fonts`));
 });
 
 gulp.task('images', function() {
-  return gulp.src(['./assets/images/*'])
-  .pipe(gulp.dest('./public/images'));
+  return gulp.src([`${paths.src}/assets/images/*`])
+  .pipe(gulp.dest(`${paths.dest}/images`));
 });
 
 gulp.task('icons', function() {
-  return gulp.src(['./assets/icons/*'])
-  .pipe(gulp.dest('./public/icons'));
+  return gulp.src([`${paths.src}/assets/icons/*`])
+  .pipe(gulp.dest(`${paths.dest}/icons`));
 });
 
 // -----------------------------------------------------------------------------
@@ -113,13 +122,13 @@ gulp.task('frctlBuild', function () {
 });
 
 gulp.task('watchCSS', function(done) {
-  gulp.watch('./assets/**/*.scss', gulp.series('css')).on('change', reload);
-  gulp.watch('./patterns/**/*.scss', gulp.series('css')).on('change', reload);
+  gulp.watch(`${paths.src}/assets/**/*.scss`, gulp.series('css')).on('change', reload);
+  gulp.watch(`${paths.src}/patterns/**/*.scss`, gulp.series('css')).on('change', reload);
   done();
 });
 
 gulp.task('watchCSSTheme', function(done) {
-  gulp.watch('./assets/**/*.scss', gulp.series('cssTheme')).on('change', reload);
+  gulp.watch(`${paths.src}/assets/**/*.scss`, gulp.series('cssTheme')).on('change', reload);
   done();
 });
 
@@ -133,3 +142,5 @@ gulp.task('watchCSSTheme', function(done) {
 gulp.task('watch', gulp.parallel('watchCSS', 'watchCSSTheme'));
 
 gulp.task('dev', gulp.parallel('frctlStart', 'css', 'cssTheme', 'watch', 'fonts', 'images', 'icons'));
+
+gulp.task('build', gulp.parallel('frctlStart', 'css', 'cssTheme', 'watch', 'fonts', 'images', 'icons', 'frctlBuild'));
