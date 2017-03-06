@@ -34,6 +34,6 @@
     "gulp-util": "^3.0.7",
     "pngquant": "^1.0.0",
     "vinyl-ftp": "^0.4.5",
-    "gulp-gh-pages": "latest",
+    "gulp-gh-pages": "latest"
   }
 }
