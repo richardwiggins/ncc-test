@@ -14,37 +14,21 @@ To get the project up and running, and view components in the browser, complete 
 6. Start the development environment: `gulp dev`
 7. Open your browser and visit <http://localhost:3000>
 
+## Development
+When developing components, you may want assets automatically compiled and the browser to refresh automatically. To do this, run the following task:
 
-setup
+* `gulp dev`
 
-- `git clone git@github.com:sturobson/SCL.git`
+## Creating a static build
+To create a static instance of this project, run the following task:
 
-- `cd SCL`
+* `gulp build`
 
+This will create a folder called `www`, into which the required files will be created.
 
+## Deployment
+To make this project publicly accessible, you can deploy a static instance by running the following task:
 
-(you might need sudo)
+* `gulp publish`
 
-install fractal
-
-```
-npm i -g @frctl/fractal
-```
-
-download all the things
-
-```
-npm install
-```
-
-you might need gulp 4.0
-
-```
-npm install gulpjs/gulp-cli -g
-```
-
-running a dev build
-
-```
-gulp dev
-```
+This will publish the contents of `public` to your `gh-pages` branch.

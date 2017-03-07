@@ -907,6 +907,10 @@ body {
   font-size: 0.9375rem;
   font-weight: 300; }
 
+.ncc-section-title {
+  font-family: "PraterSansWeb";
+  font-size: 2.8em; }
+
 label, legend {
   display: block;
   margin-bottom: 7.5px;
@@ -1127,7 +1131,7 @@ input[type="text"].filter {
   font-family: 'PraterSansWeb';
   src: url("../fonts/PraterSansWeb.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/PraterSansWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/PraterSansWeb.woff2") format("woff2"), url("../fonts/PraterSansWeb.woff") format("woff"), url("../fonts/PraterSansWeb.ttf") format("truetype"), url("../fonts/webfont.svg#svgPraterSansWeb") format("svg");
+  src: url("../fonts/PraterSansWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/PraterSansWeb.woff") format("woff"), url("../fonts/PraterSansWeb.ttf") format("truetype"), url("../fonts/webfont.svg#svgPraterSansWeb") format("svg");
   /* Legacy iOS */ }
 
 /* Headings */
@@ -1150,7 +1154,7 @@ h1, .h1 {
   font-size: 37.5px;
   font-size: 2.34375rem; }
   h1.ncc-section-title, .h1.ncc-section-title {
-    font-family: "PraterSansWeb", Arial, sans-serif;
+    font-family: "PraterSansWeb";
     color: #7f1183; }
 
 h2, .h2 {

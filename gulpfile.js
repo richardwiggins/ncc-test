@@ -24,6 +24,9 @@ const reload            = browserSync.reload;
 const fractal           = require('./fractal.js');
 const logger            = fractal.cli.console;
 
+// Misc
+var ghPages				= require('gulp-gh-pages');
+
 // -----------------------------------------------------------------------------
 // Configuration
 // -----------------------------------------------------------------------------
@@ -132,6 +135,12 @@ gulp.task('watchCSSTheme', function(done) {
   done();
 });
 
+// Deploy to GitHub pages
+gulp.task('deploy', function() {
+  return gulp.src(`${paths.build}/**/*`)
+    .pipe(ghPages());
+});
+
 
 
 // -----------------------------------------------------------------------------
@@ -144,3 +153,5 @@ gulp.task('watch', gulp.parallel('watchCSS', 'watchCSSTheme'));
 gulp.task('dev', gulp.parallel('frctlStart', 'css', 'cssTheme', 'watch', 'fonts', 'images', 'icons'));
 
 gulp.task('build', gulp.parallel('frctlStart', 'css', 'cssTheme', 'watch', 'fonts', 'images', 'icons', 'frctlBuild'));
+
+gulp.task('publish', gulp.series('deploy'));
