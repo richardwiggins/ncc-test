@@ -3,10 +3,10 @@
   "version": "0.2.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sturobson/SCL"
+    "url": "https://github.com/richardwiggins/ncc-test"
   },
   "bugs": {
-    "url": "https://github.com/sturobson/SCL/issues"
+    "url": "https://github.com/richardwiggins/ncc-test/issues"
   },
   "dependencies": {
     "@frctl/fractal": "^1.0.8",

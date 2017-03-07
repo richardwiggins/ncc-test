@@ -1,5 +1,5 @@
 ---
-title: Welcome to the NCC Digital Developer and Design Guide
+title: Welcome to the NCC Digital Design Guide
 label: Overview
 ---
 

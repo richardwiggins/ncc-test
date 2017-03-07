@@ -28,11 +28,11 @@ const myCustomisedTheme = mandelbrot({
 fractal.web.theme(myCustomisedTheme); // tell Fractal to use the configured theme by default
 
 
-fractal.set('project.title', 'NCC Digital Developer and Design Guide');
+fractal.set('project.title', 'NCC Digital Design Guide');
 
 /* Configure components */
 
-fractal.components.set('title', 'Design Library');
+fractal.components.set('title', 'NCC Digital Design Guide');
 fractal.components.set('label', 'Components');
 fractal.components.set('path', `${paths.src}/patterns`);
 fractal.components.set('default.preview', `@preview`);
