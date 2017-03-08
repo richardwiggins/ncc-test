@@ -159,7 +159,8 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-6959e4d159dab96f91fe68dfb7ca8f23-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Primary font: &amp;#x27;Open Sans&amp;#x27;, Arial, &amp;#x27;Helvetica Neue&amp;#x27;, Helvetica, sans-serif;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ncc-section-title"</span>&gt;</span>Page Section Title: PraterSansWeb;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Primary font: &amp;#x27;Open Sans&amp;#x27;, Arial, &amp;#x27;Helvetica Neue&amp;#x27;, Helvetica, sans-serif;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>Primary font italic: &amp;#x27;Open Sans&amp;#x27;, Arial, &amp;#x27;Helvetica Neue&amp;#x27;, Helvetica, sans-serif;<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Primary font bold: &amp;#x27;Open Sans&amp;#x27;, Arial, &amp;#x27;Helvetica Neue&amp;#x27;, Helvetica, sans-serif;<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Secondary font: &amp;#x27;Open Sans&amp;#x27;, Arial, &amp;#x27;Helvetica Neue&amp;#x27;, Helvetica, sans-serif;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
@@ -170,7 +171,8 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-6959e4d159dab96f91fe68dfb7ca8f23-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Primary font: </span><span class="hljs-template-variable">{{font}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ncc-section-title"</span>&gt;</span>Page Section Title: </span><span class="hljs-template-variable">{{sectionfont}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Primary font: </span><span class="hljs-template-variable">{{font}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>Primary font italic: </span><span class="hljs-template-variable">{{font}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Primary font bold: </span><span class="hljs-template-variable">{{font}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Secondary font: </span><span class="hljs-template-variable">{{font}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span></pre>
@@ -183,7 +185,8 @@
         
             
             <pre>{
-  <span class="hljs-attr">"font"</span>: <span class="hljs-string">"'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;"</span>
+  <span class="hljs-attr">"font"</span>: <span class="hljs-string">"'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;"</span>,
+  <span class="hljs-attr">"sectionfont"</span>: <span class="hljs-string">"PraterSansWeb;"</span>
 }</pre>
             
         
@@ -224,6 +227,11 @@
   <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$base-line-height-ratio</span>;
   @<span class="hljs-keyword">include</span> rem-fallback(font-size, <span class="hljs-variable">$base-font-size</span>);
   <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
+}
+
+<span class="hljs-selector-class">.ncc-section-title</span> {
+	<span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$font-special</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">2.8em</span>;
 }</pre>
                             </code>
                             
@@ -240,7 +248,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">181 Bytes</span>
+                    <span class="Meta-value">253 Bytes</span>
                 </li>
             </ul>
         </div>
