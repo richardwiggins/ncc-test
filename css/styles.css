@@ -731,7 +731,7 @@ button,
     margin-bottom: 1.5em; }
 
 .button--task {
-  background-image: url(/images/single-chevron-right.png);
+  background-image: url("../images/single-chevron-right.png");
   background-repeat: no-repeat;
   background-position: 97% 50%;
   line-height: 1;
